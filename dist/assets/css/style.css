@@ -1,0 +1,7 @@
+image{
+    background-image: url("../img/nerd.jpg");
+    width:200px !important;
+    height: 200px !important;
+    position: fixed !important;
+    z-index: 100 !important;
+}

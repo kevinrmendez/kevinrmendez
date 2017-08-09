@@ -1,0 +1,282 @@
+//$background-img: url('../dist/assets/img/nerd.jpg');
+$bg-color: turquoise;
+$section1-bg-color:#93a7f9;
+$section2-bg-color: #ffcbc1 ;
+$section3-bg-color: #3498db ;
+$section4-bg-color: #2ecc71;
+$font-color:#001428;
+$title-color: #86b200;
+$background : #fff;
+
+nav {
+    width:100%;
+    background-color: #00bff3/*#32E875 */;
+    color: #fff;
+    padding-bottom: 2%;
+    position: relative;
+    top: -40;
+    /*
+    position: fixed;
+    z-index: 100;
+    */
+
+}
+nav a{
+    font-size:2em;
+    margin-left: 5%;
+    margin-top:5%;
+    text-decoration: none;
+    color:#fff;
+    display: inline-grid;
+}
+nav a:hover{
+    color:black;
+}
+.main_img{
+    max-width: 1800px;
+    width: 1700px;
+    height: 1200px;
+    opacity: 0.4;
+    display: none;
+    position: fixed;
+    left:3%;
+    top: 0%;
+    z-index:-1;
+
+}
+
+body{
+    background-color: $background;
+    margin:auto;
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    
+}
+a{
+    text-decoration: none;
+}
+.btn{
+    outline: none;
+    background-color: #00bff3;
+    color:#fff;
+    border-radius: 50px;
+    padding:1% 4%;
+    font-size: .7em;
+
+}
+.btn:hover{
+    opacity: .6;
+}
+
+/*
+body{
+    animation-name:anim;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-direction:alternate;
+}
+*/
+.title{
+    font-size:3em;
+    color:$title-color;
+    margin-left:10%;
+}
+.header{
+    font-size: 2.5em;
+    width: 50%;
+    align-content: center;
+    display: inline-block;
+    left: 30%;
+    position: relative;
+}
+
+
+.clients{
+    h1{
+        color:#07BEB8;
+        font-size: 3em;
+        margin: auto;
+        width:50%;
+    }
+    img{
+        width:80%;
+        margin-top: 10%;
+    }
+}
+.clients-list-logo{
+    background-color: #b7f2ff;
+    border-radius: 100px;
+}
+
+.contact-header{
+    color:#07BEB8;
+    
+}
+.intro-header{
+    color:#07BEB8;
+    text-align: center;
+    animation-name: fadeIn;
+    animation-duration: 4s;
+
+}
+.intro-header h3:first-child{
+    margin-top:90px;
+}
+.intro-header h3:nth-child(2){
+    margin-top:20px;
+}
+.sub-text{
+    color: #6d6565;
+    font-size: .5em;
+    text-align: center;
+}
+.subtitle{
+    color:#fff;
+    font-size:2em;
+
+}
+input{
+    display: block;
+    color: #e3e3e3;
+}
+input[type = submit]{
+    color:#fff;
+    background-color: #9BC53D;
+    outline: none;
+    margin-top:5%;
+}
+input[type = submit]:active{
+    color:black;
+    background-color: #c8e18f;
+}
+input:focus , textarea:focus{
+    border-color: #9BC53D;
+    border-radius: 10px;
+    border-style: solid;
+    outline: none;
+}
+.section{
+    color:#fff;
+    border-radius: 0% 30% 0% 0%;
+    position: relative;
+    width:80%;
+    margin:auto;
+
+    p{
+        padding:1.2em;
+        font-size:1.3em
+    }
+    ul{
+       list-style-type: none;
+    }
+    img{
+        width:20%;
+    }
+    
+}
+.left{
+    background-color: red;
+    right:50%;
+}
+.right{
+    right:0%;
+}
+
+.section1{
+    background-color:$section1-bg-color;
+}
+.section2{
+   background-color:$section2-bg-color;
+    
+}
+.section3{
+     background-color:$section3-bg-color;
+
+}
+.section4{
+   background-color:$section4-bg-color;
+    
+}
+p.project-description{
+    font-size: .7em;
+    width:50%;
+}
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+form{
+    margin-left:30%;
+    input{
+        font-size: 2em;
+    }
+}
+.contact-form{
+    animation-name: moveUp;
+    animation-duration: 1s;
+    animation-delay:90ms;
+    position: relative;
+}
+textarea{
+    resize: none;
+    overflow: auto;
+    width:500px;
+    height: 300px;
+    font-size:2em;
+}
+.container{
+  clear: both;
+}
+.col{
+    display: block;
+    float: left;
+    margin: 1% 0 1% 1.6%;
+    img {
+        width: 80%;
+    }
+}
+
+////////////animation//////
+@keyframes fadeIn {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
+@keyframes moveUp{
+    0%{
+        bottom: -300px;
+    }
+    100%{
+        bottom: 0px;
+    }
+}
+@keyframes box-move{
+    0%{left:0px;top:0px;}
+    80%{left:100px;top:100px;}
+}/*
+.box{
+    position:relative;
+    background-color:gray;
+    width:100px;
+    height:100px;
+    transform:translateX(200px);
+    //animation-name: box-move;
+    animation-duration:3s;
+    animation-delay:1s;
+    animation-iteration-count:infinite;
+    animation-direction:reverse;
+}
+.box:hover{
+    transform:translateX(-200px);
+    transition-property: transform;
+    transition-duration: 2s;
+}
+*/
