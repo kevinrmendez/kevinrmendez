@@ -4,8 +4,8 @@ const Skills = React.createClass({
     render(){
         return(
     <div>
-    <h2 className="title">{this.props.title}</h2>
-    <div className="section section4 group ">
+    <h2 className="title">Skills</h2>
+    <div className="border group ">
         <div className="col">
         <h4 className="subtitle"> Web Development </h4>
         <ul>

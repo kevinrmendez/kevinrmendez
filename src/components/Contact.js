@@ -23,8 +23,8 @@ const Contact = React.createClass({
         }
         return(
             <div>
+            <h2 className="title"> Contac</h2>
             <p className="header contact-header"> Send me a message! </p>
-            <h2 className="title">{/*this.props.title*/}</h2>
             <div className="contact-form">
             <form style={style}>
                 <input type="text" name="name" placeholder="name" required />

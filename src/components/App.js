@@ -9,6 +9,7 @@ import Intro from './Intro'
 import Portfolio from './Portfolio'
 import ScrollableAnchor from 'react-scrollable-anchor'
 import Clients from './Clients'
+import Footer from './Footer'
 import { configureAnchors } from 'react-scrollable-anchor'
 const App = React.createClass({
     getInitialState(){
@@ -21,6 +22,7 @@ const App = React.createClass({
         <div>
             <Nav />
             {this.props.children}
+            <Footer />
             {/*
             <Intro />
              <ScrollableAnchor id={'about'}>
